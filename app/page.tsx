@@ -30,8 +30,8 @@ export default function Home() {
         <div className="hero-actions"><a className="primary-button" href="#logg">Se hva jeg har gjort ↓</a><a className="text-link" href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Åpne prototypen ↗</a></div>
       </div>
       <div className="hero-visual" aria-label="Skjermbilder fra EasyFisk">
-        <div className="phone phone-back"><img src="/screenshots/map.png" alt="Sonekartet i EasyFisk" /></div>
-        <div className="phone phone-front"><img src="/screenshots/home.png" alt="Hjemskjermen i EasyFisk" /></div>
+        <div className="phone phone-back"><img src="screenshots/map.png" alt="Sonekartet i EasyFisk" /></div>
+        <div className="phone phone-front"><img src="screenshots/home.png" alt="Hjemskjermen i EasyFisk" /></div>
         <div className="status-note"><span className="pulse" /> Sist oppdatert 2. september</div>
       </div>
     </section>
@@ -43,7 +43,7 @@ export default function Home() {
 
     <section className="showcase section">
       <div className="showcase-copy"><p className="eyebrow light">Arbeid i praksis</p><h2>Fra regelverk til en flyt som gir mening.</h2><p>Brukeren får tydelig beskjed om hva som er godkjent, hva som mangler og hvorfor. I fangstrapporten kontrolleres valgene automatisk mot gjeldende størrelsesregler.</p><a href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">Se kildekoden på GitHub ↗</a></div>
-      <div className="showcase-images"><figure><img src="/screenshots/catch-report.png" alt="Regelkontroll av fangstrapport" /><figcaption>Automatisk regelkontroll</figcaption></figure><figure><img src="/screenshots/permits.png" alt="Oversikt over fiskekort" /><figcaption>Fiskekort og dokumentasjon</figcaption></figure></div>
+      <div className="showcase-images"><figure><img src="screenshots/catch-report.png" alt="Regelkontroll av fangstrapport" /><figcaption>Automatisk regelkontroll</figcaption></figure><figure><img src="screenshots/permits.png" alt="Oversikt over fiskekort" /><figcaption>Fiskekort og dokumentasjon</figcaption></figure></div>
     </section>
 
     <section className="section log-section" id="logg">
