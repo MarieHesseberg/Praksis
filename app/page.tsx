@@ -39,7 +39,6 @@ export default function Home() {
     <section className="intro section" id="oppgaven">
       <div className="section-label"><span>01</span> Oppgaven</div>
       <div className="intro-grid"><h2>En digital følgesvenn for en tryggere fisketur.</h2><div><p className="large-copy">Målet med praksisoppgaven er å utforske hvordan en digital tjeneste kan gjøre det lettere å følge regler, dokumentere aktivitet og få oversikt over egen fisking.</p><p>EasyFisk tar utgangspunkt i Mandalselva. Løsningen leder brukeren gjennom kontroll av fiskekort og dokumenter, valg av sone, selve fiskeøkten og rapportering av fangst. Prototypen skal både være enkel for førstegangsbrukere og presis nok til å formidle komplekst regelverk.</p></div></div>
-      <div className="facts"><article><strong>5</strong><span>hovedområder i appen</span></article><article><strong>360 px</strong><span>minste støttede bredde</span></article><article><strong>2026</strong><span>aktiv regelversjon</span></article><article><strong>100 %</strong><span>mobiltilpasset prototype</span></article></div>
     </section>
 
     <section className="showcase section">
