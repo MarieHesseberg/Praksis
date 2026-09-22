@@ -64,7 +64,7 @@ export default function Home() {
           <p className="eyebrow">Praksisperiode · høsten 2026</p>
           <h1>Sammen om en enklere fisketur.</h1>
           <p className="lead">Dette er status fra praksisarbeidet mitt for <strong>Mandalselva Elveeigarlag</strong>. Jeg utvikler EasyFisk alene, men løsningen formes i samarbeid med elveeigarlaget gjennom innsikt, faglige avklaringer og tilbakemeldinger.</p>
-          <div className="hero-actions"><a className="primary-button" href="#logg">Se hva jeg har gjort ↓</a><a className="text-link" href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Test prototypen ↗</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#logg">Se hva jeg har gjort ↓</a><a className="text-link" href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Test prototypen ↗</a></div>
         </div>
         <div className="hero-visual" aria-label="Skjermbilder fra EasyFisk">
           <div className="phone phone-back"><img src="screenshots/map.png" alt="Sonekartet i EasyFisk" /></div>
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       <section className="showcase section">
-        <div className="showcase-copy"><p className="eyebrow light">Arbeid i praksis</p><h2>Fra regelverk til en flyt som gir mening.</h2><p>Brukeren får tydelig beskjed om hva som er godkjent, hva som mangler og hvorfor. I fangstrapporten kontrolleres valgene automatisk mot gjeldende størrelsesregler.</p><a href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Prøv hele brukerreisen ↗</a></div>
+        <div className="showcase-copy"><p className="eyebrow light">Arbeid i praksis</p><h2>Fra regelverk til en flyt som gir mening.</h2><p>Brukeren får tydelig beskjed om hva som er godkjent, hva som mangler og hvorfor. I fangstrapporten kontrolleres valgene automatisk mot gjeldende størrelsesregler.</p><a href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Prøv hele brukerreisen ↗</a></div>
         <div className="showcase-images"><figure><img src="screenshots/catch-report.png" alt="Regelkontroll av fangstrapport" /><figcaption>Automatisk regelkontroll</figcaption></figure><figure><img src="screenshots/permits.png" alt="Oversikt over fiskekort" /><figcaption>Fiskekort og dokumentasjon</figcaption></figure></div>
       </section>
 
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       <section className="video-section section" id="video">
-        <div className="video-copy"><p className="eyebrow light">Skjermdemo</p><h2>Se EasyFisk i bruk.</h2><p>Den publiserte prototypen fungerer som en interaktiv demonstrasjon. En kort veiledning viser hva som bør testes, før du kan prøve fiskekort, statusmotor, kart, fiskeøkt og fangstrapportering selv.</p><div className="hero-actions"><a className="light-button" href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Start demonstrasjonen ↗</a><a className="video-link" href="https://github.com/MarieHesseberg/EasyFisk/blob/main/PROSJEKTLOGG.md" target="_blank" rel="noreferrer">Les hele prosjektloggen ↗</a></div></div>
+        <div className="video-copy"><p className="eyebrow light">Skjermdemo</p><h2>Se EasyFisk i bruk.</h2><p>Den publiserte prototypen fungerer som en interaktiv demonstrasjon. En kort veiledning viser hva som bør testes, før du kan prøve fiskekort, statusmotor, kart, fiskeøkt og fangstrapportering selv.</p><div className="hero-actions"><a className="light-button" href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Start demonstrasjonen ↗</a><a className="video-link" href="https://github.com/MarieHesseberg/EasyFisk/blob/main/PROSJEKTLOGG.md" target="_blank" rel="noreferrer">Les hele prosjektloggen ↗</a></div></div>
         <div className="video-frame"><span>01</span><div><b>Før turen</b><p>Fiskekort, dokumenter, regler og status.</p></div><span>02</span><div><b>Under turen</b><p>Sonevalg, kart og aktiv fiskeøkt.</p></div><span>03</span><div><b>Etter turen</b><p>Fangst, historikk og statistikk.</p></div></div>
       </section>
 
@@ -123,7 +123,7 @@ export default function Home() {
         <div className="missing-grid"><div><h2>Fra lokal prototype til en ekte tjeneste.</h2><p className="large-copy">Grunnlaget er på plass. Neste fase handler om validering, integrasjoner og testing med flere faktiske brukere.</p></div><div className="missing-list"><article><b>01</b><div><h3>Teste med fiskere</h3><p>Observere hele brukerreisen og finne ut hvor språk, valg eller tilbakemeldinger fortsatt skaper usikkerhet.</p></div></article><article><b>02</b><div><h3>Koble på ekte tjenester</h3><p>Erstatte demonstrasjonsdata med sikker innlogging, fiskekort, betaling, serverlagring og innsending av rapporter.</p></div></article><article><b>03</b><div><h3>Dokumentere og forbedre</h3><p>Iterere på funnene, styrke universell utforming og fortsette å dokumentere valg og avgrensninger.</p></div></article></div></div>
       </section>
 
-      <footer><div><span className="footer-mark">MH</span><p>Praksislogg · EasyFisk<br />Utviklet av Marie Hesseberg i samarbeid med Mandalselva Elveeigarlag</p></div><div className="footer-links"><a href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">GitHub-repository ↗</a><a href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Publisert prototype ↗</a></div></footer>
+      <footer><div><span className="footer-mark">MH</span><p>Praksislogg · EasyFisk<br />Utviklet av Marie Hesseberg i samarbeid med Mandalselva Elveeigarlag</p></div><div className="footer-links"><a href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">GitHub-repository ↗</a><a href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Publisert prototype ↗</a></div></footer>
     </main>
   );
 }
