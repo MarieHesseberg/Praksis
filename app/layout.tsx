@@ -7,7 +7,7 @@ const serif = Libre_Baskerville({ variable: '--font-serif', subsets: ['latin'], 
 
 export const metadata: Metadata = {
   title: 'Praksislogg · Marie Hesseberg · EasyFisk',
-  description: 'Status fra Marie Hessebergs praksisarbeid for Mandalselva Elveeigarlag – utvikling av EasyFisk i tett samarbeid med oppdragsgiveren.',
+  description: 'Status fra Marie Hessebergs praksisarbeid med EasyFisk – en mobilprototype for en enklere fisketur i Mandalselva.',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
