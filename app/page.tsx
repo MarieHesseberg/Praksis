@@ -44,9 +44,9 @@ const responsibilities = [
 ];
 
 const challenges = [
-  { title: 'Behov må oversettes til løsning', text: 'Jeg må forstå hvilke problemer som er viktigst, prioritere mellom ulike ønsker og gjøre innsikt og tilbakemeldinger om til konkrete funksjoner.' },
-  { title: 'Komplekse regler må bli forståelige', text: 'Fiskeren skal få et tydelig svar uten at viktige vilkår eller nyanser forsvinner. Derfor viser statusmotoren både resultatet og hvorfor det gjelder.' },
-  { title: 'En prototype må være ærlig', text: 'Betaling, innsending og flere datakilder er simulert. Testkort er tydelig merket, ingen penger trekkes, og lokale handlinger fremstilles ikke som ekte tjenester.' },
+  { title: 'Holde orden på regler og informasjon', text: 'EasyFisk inneholder mange regler, valg og opplysninger som må stemme overens. En stor utfordring har vært å beholde oversikten og passe på at informasjonen er riktig og presenteres på riktig sted.' },
+  { title: 'Prioritere når alt virker viktig', text: 'Listen over ting som kan bygges og forbedres blir fort lang. Jeg har måttet lære å dele opp arbeidet, velge hva som er viktigst nå og akseptere at ikke alt kan løses samtidig.' },
+  { title: 'Se løsningen med nye øyne', text: 'En prototype med mange funksjoner er krevende å teste grundig. Når jeg jobber alene, kan jeg bli blind for egne feil eller sitte fast i én måte å løse noe på. Derfor vil jeg gjennomføre flere brukertester og hente inn flere perspektiver.' },
 ];
 
 export default function Home() {
@@ -95,7 +95,7 @@ export default function Home() {
 
       <section className="challenges section">
         <div className="section-label"><span>04</span> Utfordringer og læring</div>
-        <div className="section-heading"><h2>Tre ting jeg har lært.</h2><p>De viktigste utfordringene har vært prioritering, tydelige regler og en ærlig prototype.</p></div>
+        <div className="section-heading"><h2>Tre ting jeg har lært.</h2><p>De største utfordringene har vært å bevare oversikten, prioritere arbeidet og oppdage svakheter i min egen løsning.</p></div>
         <div className="challenge-grid">{challenges.map((item, index) => <article key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
       </section>
 
