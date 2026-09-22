@@ -2,7 +2,7 @@ const logEntries = [
   {
     date: '19.–30. august',
     title: 'Fra idé til en fungerende prototype',
-    text: 'Jeg etablerte EasyFisk, gikk fra grønn til blå visuell identitet og delte løsningen i tydeligere fagområder. Regler, lokal lagring og skjermbilder fikk klare grenser, samtidig som fisketurer, fangster, dokumenter og bilder begynte å bli lagret på ordentlig i nettleseren.',
+    text: 'Jeg begynte å utvikle EasyFisk på oppdrag fra Mandalselva Elveeigarlag. Løsningen gikk fra idé til en fungerende prototype, med tydeligere fagområder for regler, fisketurer, fangster, dokumenter og bilder.',
     tags: ['Konsept', 'React', 'TypeScript', 'Lokal lagring'],
   },
   {
@@ -38,16 +38,16 @@ const logEntries = [
 ];
 
 const responsibilities = [
-  { number: '01', title: 'Innsikt og avgrensning', text: 'Forstå fiskerens behov, undersøke regler og offentlige kilder og gjøre et komplekst fagområde håndterbart.' },
+  { number: '01', title: 'Innsikt og avgrensning', text: 'Forstå behovene til elveeigarlaget og fiskerne gjennom dialog, tilbakemeldinger, regler og offentlige kilder.' },
   { number: '02', title: 'Design og prototyping', text: 'Utforme informasjonsarkitektur, brukerflyter, visuell retning og responsive skjermer for mobil og PC.' },
   { number: '03', title: 'Utvikling', text: 'Bygge funksjonene i React og TypeScript, med kart, regler, skjemaer, lokal lagring og språkstøtte.' },
-  { number: '04', title: 'Testing og forbedring', text: 'Teste på små skjermer, samle tilbakemeldinger, rette friksjon og sikre løsningen med automatiske tester.' },
+  { number: '04', title: 'Testing og forbedring', text: 'Presentere arbeidet for elveeigarlaget, ta imot tilbakemeldinger, rette friksjon og sikre løsningen med automatiske tester.' },
 ];
 
 const challenges = [
+  { title: 'Behov må oversettes til løsning', text: 'Jeg utvikler alene, men ikke i et vakuum. Tilbakemeldingene fra elveeigarlaget hjelper meg å forstå praksisen i elva, prioritere riktig og gjøre ideene om til konkrete funksjoner.' },
   { title: 'Komplekse regler må bli forståelige', text: 'Fiskeren skal få et tydelig svar uten at viktige vilkår eller nyanser forsvinner. Derfor viser statusmotoren både resultatet og hvorfor det gjelder.' },
   { title: 'En prototype må være ærlig', text: 'Betaling, innsending og flere datakilder er simulert. Testkort er tydelig merket, ingen penger trekkes, og lokale handlinger fremstilles ikke som ekte tjenester.' },
-  { title: 'Mobilen avslører de virkelige problemene', text: 'Dialoger, bunnmeny, tastatur og små høyder skapte feil som ikke var synlige på PC. Fysiske mobiltester har derfor styrt flere forbedringer.' },
 ];
 
 export default function Home() {
@@ -62,8 +62,8 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Praksisperiode · høsten 2026</p>
-          <h1>Jeg gjør fiskeregler enklere å forstå.</h1>
-          <p className="lead">Dette er statusen fra praksisarbeidet mitt med <strong>EasyFisk</strong> — en mobilprototype som samler det fiskeren trenger før, under og etter en tur i Mandalselva.</p>
+          <h1>Sammen om en enklere fisketur.</h1>
+          <p className="lead">Dette er status fra praksisarbeidet mitt for <strong>Mandalselva Elveeigarlag</strong>. Jeg utvikler EasyFisk alene, men løsningen formes i samarbeid med elveeigarlaget gjennom innsikt, faglige avklaringer og tilbakemeldinger.</p>
           <div className="hero-actions"><a className="primary-button" href="#logg">Se hva jeg har gjort ↓</a><a className="text-link" href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Test prototypen ↗</a></div>
         </div>
         <div className="hero-visual" aria-label="Skjermbilder fra EasyFisk">
@@ -77,22 +77,22 @@ export default function Home() {
         <div className="section-label"><span>01</span> Om meg</div>
         <div className="about-grid">
           <figure className="portrait"><img src="me.jpg" alt="Marie Hesseberg" /><figcaption>Marie Hesseberg · designer og utvikler EasyFisk</figcaption></figure>
-          <div className="about-copy"><p className="eyebrow">Hei, jeg er Marie</p><h2>Jeg liker å gjøre vanskelige ting enkle å bruke.</h2><p className="large-copy">I dette praksisprosjektet jobber jeg i skjæringspunktet mellom design, teknologi og tjenesteutvikling.</p><p>Jeg følger produktet hele veien: fra innsikt og kildearbeid til skisser, kode, testing og dokumentasjon. Det motiverer meg å se hvordan små valg i språk, struktur og visuell utforming kan gjøre en digital tjeneste tryggere og mer forståelig.</p><p>EasyFisk har gitt meg mulighet til å ta selvstendige beslutninger, teste dem i praksis og forbedre løsningen når virkelige brukere møter den.</p><div className="about-facts"><span>Produktdesign</span><span>Frontend</span><span>Brukeropplevelse</span><span>Testing</span></div></div>
+          <div className="about-copy"><p className="eyebrow">Hei, jeg er Marie</p><h2>Jeg liker å gjøre vanskelige ting enkle å bruke.</h2><p className="large-copy">I praksisperioden har jeg fått i oppgave av Mandalselva Elveeigarlag å utvikle EasyFisk.</p><p>Jeg har ansvar for hele utviklingen – fra innsikt og kildearbeid til skisser, kode, testing og dokumentasjon. Samtidig samarbeider jeg tett med elveeigarlaget, som deler kunnskap om dagens praksis og gir tilbakemeldinger på løsningene underveis.</p><p>Det motiverer meg å omsette virkelige behov til en tjeneste som kan gjøre fisketuren enklere, tryggere og mer forståelig.</p><div className="about-facts"><span>Produktdesign</span><span>Frontend</span><span>Brukeropplevelse</span><span>Testing</span></div></div>
         </div>
       </section>
 
       <section className="company section">
-        <div className="section-label"><span>02</span> Om EasyFisk</div>
+        <div className="section-label"><span>02</span> Oppdragsgiveren</div>
         <div className="company-grid">
-          <div><p className="eyebrow">Digital tjenesteutvikling</p><h2>Et lite prosjekt med et tydelig problem å løse.</h2></div>
-          <div><p className="large-copy">EasyFisk er et selvstendig praksis- og prototypeprosjekt innen digitale tjenester for fritidsfiske og naturforvaltning.</p><p>Løsningen tar utgangspunkt i Mandalselva og samler fiskekort, dokumentasjon, regler, kart, fiskeøkter og fangstrapportering i én sammenhengende opplevelse. Særpreget er kombinasjonen av komplekst regelverk og en enkel, mobil brukerflyt.</p><p>EasyFisk er foreløpig ikke et etablert selskap med ansatte eller offentlig omsetning. Jeg utvikler prototypen selv, med offentlige kilder, tilbakemeldinger fra testere og behov i den lokale fiskereisen som grunnlag.</p></div>
+          <div><p className="eyebrow">Mandalselva Elveeigarlag</p><h2>De kjenner elva. Jeg utvikler løsningen.</h2></div>
+          <div><p className="large-copy">Mandalselva Elveeigarlag er et samvirkeforetak og en sammenslutning av fiskerettshavere i Mandalsvassdraget.</p><p>Elveeigarlaget forvalter grunneierinteresser og fiskeressurser på vegne av rettighetshaverne, og arbeider for å utvikle gode tilbud til fiskerne. De har gitt meg oppgaven med å undersøke hvordan en digital løsning kan gjøre informasjon, regler, fiskekort, dokumentasjon og fangstrapportering enklere å forstå og bruke.</p><p>Jeg har ansvar for design og utvikling av EasyFisk alene. Elveeigarlaget er oppdragsgiver og faglig samarbeidspartner: De deler erfaringer og behov, svarer på avklaringer og gir tilbakemeldinger som påvirker prioriteringene og neste versjon av prototypen.</p></div>
         </div>
-        <div className="fact-strip"><div><strong>1</strong><span>selvstendig utvikler</span></div><div><strong>198</strong><span>enhetstester</span></div><div><strong>106</strong><span>nettlesertester</span></div><div><strong>2</strong><span>språk i prototypen</span></div></div>
+        <div className="fact-strip"><div><strong>SA</strong><span>samvirkeforetak</span></div><div><strong>1</strong><span>selvstendig utvikler</span></div><div><strong>Løpende</strong><span>faglige tilbakemeldinger</span></div><div><strong>2</strong><span>språk i prototypen</span></div></div>
       </section>
 
       <section className="intro section" id="oppgaven">
         <div className="section-label"><span>03</span> Oppgaven</div>
-        <div className="intro-grid"><h2>En digital følgesvenn for en tryggere fisketur.</h2><div><p className="large-copy">Målet er å utforske hvordan en digital tjeneste kan gjøre det lettere å følge regler, dokumentere aktivitet og få oversikt over egen fisking.</p><p>Prototypen leder brukeren gjennom kontroll av fiskekort og dokumenter, valg av sone, selve fiskeøkten og rapportering av fangst. Den skal være enkel nok for førstegangsbrukere og samtidig presis nok til å formidle komplekst regelverk.</p></div></div>
+        <div className="intro-grid"><h2>En digital følgesvenn for en tryggere fisketur.</h2><div><p className="large-copy">Oppgaven fra Mandalselva Elveeigarlag er å utforske hvordan en digital tjeneste kan gjøre det lettere å følge regler, dokumentere aktivitet og få oversikt over egen fisking.</p><p>Prototypen leder brukeren gjennom kontroll av fiskekort og dokumenter, valg av sone, selve fiskeøkten og rapportering av fangst. Den skal være enkel nok for førstegangsbrukere og samtidig presis nok til å formidle komplekst regelverk. Løsningen forbedres underveis på bakgrunn av tilbakemeldingene fra elveeigarlaget.</p></div></div>
         <div className="responsibility-grid">{responsibilities.map((item) => <article key={item.number}><span>{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
       </section>
 
@@ -123,7 +123,7 @@ export default function Home() {
         <div className="missing-grid"><div><h2>Fra lokal prototype til en ekte tjeneste.</h2><p className="large-copy">Grunnlaget er på plass. Neste fase handler om validering, integrasjoner og testing med flere faktiske brukere.</p></div><div className="missing-list"><article><b>01</b><div><h3>Teste med fiskere</h3><p>Observere hele brukerreisen og finne ut hvor språk, valg eller tilbakemeldinger fortsatt skaper usikkerhet.</p></div></article><article><b>02</b><div><h3>Koble på ekte tjenester</h3><p>Erstatte demonstrasjonsdata med sikker innlogging, fiskekort, betaling, serverlagring og innsending av rapporter.</p></div></article><article><b>03</b><div><h3>Dokumentere og forbedre</h3><p>Iterere på funnene, styrke universell utforming og fortsette å dokumentere valg og avgrensninger.</p></div></article></div></div>
       </section>
 
-      <footer><div><span className="footer-mark">MH</span><p>Praksislogg · EasyFisk<br />Utviklet og dokumentert av Marie Hesseberg</p></div><div className="footer-links"><a href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">GitHub-repository ↗</a><a href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Publisert prototype ↗</a></div></footer>
+      <footer><div><span className="footer-mark">MH</span><p>Praksislogg · EasyFisk<br />Utviklet av Marie Hesseberg i samarbeid med Mandalselva Elveeigarlag</p></div><div className="footer-links"><a href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">GitHub-repository ↗</a><a href="https://mariehesseberg.github.io/EasyFisk/" target="_blank" rel="noreferrer">Publisert prototype ↗</a></div></footer>
     </main>
   );
 }
