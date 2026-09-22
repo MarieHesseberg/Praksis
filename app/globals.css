@@ -18,3 +18,8 @@ footer{padding:42px clamp(24px,7vw,110px);display:flex;justify-content:space-bet
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 @media(max-width:600px){.timeline-marker{padding-left:11px}.timeline-content{padding-right:18px}.timeline-entry:hover{transform:none}}
 
+/* Strammere og mer konsekvent typografisk skala */
+:root{--title-xl:clamp(3rem,5vw,5.2rem);--title-lg:clamp(2.25rem,3.6vw,3.8rem);--title-md:clamp(1.4rem,1.8vw,1.85rem)}
+body{line-height:1.65}h1,h2{letter-spacing:-.035em;line-height:1.12}.hero h1{max-width:720px;margin-bottom:28px;font-size:var(--title-xl)}.lead{font-size:clamp(1.08rem,1.35vw,1.28rem);line-height:1.6}.section{padding-block:clamp(78px,9vw,125px)}.section-label{margin-bottom:48px}.large-copy{font-size:clamp(1.12rem,1.45vw,1.35rem);line-height:1.6}.about h2,.company h2,.intro h2,.missing h2,.showcase h2,.section-heading h2,.video-copy h2{font-size:var(--title-lg)}.section-heading{margin-bottom:65px}.timeline-content h3,.challenge-grid h3{font-size:var(--title-md);line-height:1.28}.challenge-grid h3{margin-top:24px}
+@media(max-width:600px){:root{--title-xl:clamp(2.8rem,12vw,4rem);--title-lg:clamp(2.1rem,9vw,3rem);--title-md:1.4rem}.section{padding-block:68px}}
+
