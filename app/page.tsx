@@ -1,21 +1,39 @@
 const logEntries = [
   {
-    date: 'Oppstart',
-    title: 'Fra behov til prototype',
-    text: 'Jeg kartla oppgaven, bygget den første versjonen og samlet regler, fiskekort, kart, turer og fangster i én brukerreise.',
-    tags: ['Innsikt', 'Konsept', 'React'],
+    date: '19.–30. august',
+    title: 'Fra idé til en fungerende prototype',
+    text: 'Jeg begynte å utvikle EasyFisk på oppdrag fra Mandalselva Elveeigarlag. Løsningen gikk fra idé til en fungerende prototype, med egne områder for regler, fisketurer, fangster og dokumenter.',
+    tags: ['Konsept', 'React', 'TypeScript', 'Lokal lagring'],
   },
   {
-    date: 'Utvikling',
-    title: 'En mer komplett brukerreise',
-    text: 'Jeg la til fiskekort, interaktivt kart, engelsk språk og fangstrapportering, og forbedret de viktigste flytene etter tilbakemeldinger.',
-    tags: ['Funksjoner', 'Språk', 'Brukertesting'],
+    date: '31. august–2. september',
+    title: 'Fiskekort, kart og en helhetlig brukerreise',
+    text: 'Jeg utviklet fiskekortbutikk med testbetaling, produktoversikt og kortstatus. Et interaktivt sonekart og et samlet fargesystem gjorde løsningen mer nyttig og troverdig.',
+    tags: ['Fiskekort', 'Kart', 'Designsystem'],
   },
   {
-    date: 'Status nå',
-    title: 'Testbar og publisert',
-    text: 'Prototypen har fått ny designretning, introduksjon for testere og et mer robust teknisk grunnlag. Den er publisert og består 198 enhetstester og 106 nettlesertester.',
-    tags: ['Design', 'Testing', 'Publisering'],
+    date: '7.–12. september',
+    title: 'Engelsk språk og bedre hjelp til testing',
+    text: 'Jeg la til engelsk for tilreisende fiskere og samlet oversettelsene i kontrollerte språkfiler. Jeg laget også veiledning som gjør det lettere å teste prototypen og gi konkrete tilbakemeldinger.',
+    tags: ['Språk', 'Brukertesting', 'Innhold'],
+  },
+  {
+    date: '12.–18. september',
+    title: 'Mindre friksjon i de viktigste flytene',
+    text: 'Tilbakemeldinger viste at appen ga for mye informasjon på én gang. Jeg forenklet hjemskjermen, fiskestart, kjøp og fangstrapportering, og forbedret mobilnavigasjonen.',
+    tags: ['UX', 'Tilgjengelighet', 'Mobil først'],
+  },
+  {
+    date: '18.–19. september',
+    title: 'Ny designretning og et sterkere teknisk grunnlag',
+    text: 'Jeg satte sammen en ny visuell retning med billettformede fiskekort, illustrasjoner og ny logo. Samtidig gjorde jeg datalaget, tidsbehandlingen og feiltilstandene mer robuste.',
+    tags: ['Produktdesign', 'Arkitektur', 'Testing'],
+  },
+  {
+    date: '19.–20. september',
+    title: 'Selvforklarende prototype og publisering',
+    text: 'Jeg laget en introduksjon som leder nye testere gjennom appen, tilpasset PC-visningen og gjorde prototypen klar for stabil publisering. Status er 198 enhetstester og 106 nettlesertester.',
+    tags: ['Onboarding', 'Dokumentasjon', 'Publisering'],
   },
 ];
 
@@ -70,8 +88,8 @@ export default function Home() {
       </section>
 
       <section className="section log-section" id="logg">
-        <div className="section-label"><span>03</span> Kort arbeidslogg</div>
-        <div className="section-heading"><h2>Fra idé til publisert prototype.</h2><p>Tre korte stopp viser utviklingen så langt.</p></div>
+        <div className="section-label"><span>03</span> Arbeidslogg</div>
+        <div className="section-heading"><h2>Arbeidet uke for uke.</h2><p>Loggen viser hvordan løsningen har utviklet seg gjennom konkrete valg, testing og forbedringer.</p></div>
         <div className="timeline">{logEntries.map((entry, index) => <article className="timeline-entry" key={entry.title}><div className="timeline-marker"><span>{String(index + 1).padStart(2, '0')}</span></div><div className="timeline-content"><time>{entry.date}</time><h3>{entry.title}</h3><p>{entry.text}</p><div className="tags">{entry.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div></article>)}</div>
       </section>
 
