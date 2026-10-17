@@ -102,9 +102,8 @@ export default function StatusTwo() {
               Den første rolletesten ble for teknisk og uoversiktlig. Jeg endret
               derfor retning: brukeren velger en rolle og møter relevante
               handlinger i selve appen. Grunneierens salgsarbeid ligger ved
-              fiskekortene, mens oppsyn får kontrollen på hjem. Dette er
-              fortsatt en test med fiktive personer og lokale data, ikke et
-              ferdig flerbrukersystem.
+              fiskekortene, mens oppsyn får kontrollen på hjem. Dette er en del
+              av prototypen, der ulike roller kan prøves med fiktive personer.
             </p>
           </section>
           <section className="report-section">
@@ -178,7 +177,7 @@ export default function StatusTwo() {
           </section>
           <section className="report-section">
             <p className="eyebrow">05 · Annet og veien videre</p>
-            <h2>Teste behovene før en reell lansering.</h2>
+            <h2>Teste og forbedre prototypen.</h2>
             <p>
               Jeg har fortsatt å dokumentere endringer og bruke automatiske
               tester for å kontrollere hele flyter. Arbeidet har beveget seg fra
@@ -187,50 +186,17 @@ export default function StatusTwo() {
             </p>
             <p>
               Neste steg er flere brukertester med fiskere og relevante roller,
-              avklaring av lokale rutiner med oppdragsgiver og prioritering av
-              hva en første driftsversjon faktisk trenger. Ekte innlogging,
-              betaling, felles database, synkronisering mellom enheter og
-              levering av rapporter må fortsatt etableres. Kamera og bruk ute
-              ved elva trenger også testing på fysiske telefoner.
+              avklaring av lokale rutiner med oppdragsgiver og videre forbedring
+              av prototypens innhold og brukerflyter. Jeg vil også undersøke
+              hvordan den oppleves på fysiske telefoner og ute ved elva.
             </p>
             <p>
               Målet er at rapportering og oppfølging skal bli enklere for både
               fiskeren og Mandalselva Elveeigarlag. Prototypen gjør det mulig å
-              prøve arbeidsflyten og oppdage mangler før den kobles til reelle
-              tjenester.
+              prøve arbeidsflyten og finne ut hvilke løsninger som er lette å
+              forstå og bruke.
             </p>
           </section>
-          <section className="source-note">
-            <h2>Video</h2>
-            <p>
-              Videodelen er ikke lagt inn ennå. Den skriftlige statusen og
-              skjermbildene dokumenterer arbeidet så langt.
-            </p>
-            <p>
-              En kort gjennomgang av fiskekortkjøp, fiskestart og rollevalg,
-              gjerne kombinert med en uttalelse fra oppdragsgiver om dagens
-              rutiner og behov, vil supplere denne statusen.
-            </p>
-            <a className="text-link" href="https://easyfisk.pages.dev/">
-              Åpne den interaktive prototypen ↗
-            </a>
-          </section>
-          <aside className="source-note">
-            <strong>Dokumentasjonsgrunnlag</strong>
-            <p>
-              Teksten bygger på{' '}
-              <a href="https://github.com/MarieHesseberg/EasyFisk/blob/main/PROSJEKTLOGG.md">
-                prosjektloggen
-              </a>{' '}
-              og{' '}
-              <a href="https://github.com/MarieHesseberg/EasyFisk/blob/main/docs/role-driven-app-2026-10-14.md">
-                dokumentasjonen av rolleflyten
-              </a>
-              . Nye skjermbilder er tatt 17. oktober 2026. Dette er en
-              prototype; en bekreftelse på skjermen innebærer ikke en virkelig
-              betaling eller innsending.
-            </p>
-          </aside>
           <div className="report-next">
             <Link href="/status-1/">← Status 1</Link>
             <Link className="primary-button" href="/">

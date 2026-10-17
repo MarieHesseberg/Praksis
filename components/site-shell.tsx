@@ -7,6 +7,9 @@ export const asset = (path: string) =>
 export function SiteHeader({ active = 'home' }: { active?: string }) {
   return (
     <header className="site-header">
+      <a className="skip-link" href="#main-content">
+        Hopp til innhold
+      </a>
       <Link className="brand" href="/" aria-label="EasyFisk – hjem">
         <span>MH</span>
         <strong>EasyFisk · praksis</strong>

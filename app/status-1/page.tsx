@@ -161,9 +161,7 @@ export default function StatusOne() {
             </p>
             <p>
               Neste steg var å hente inn flere tilbakemeldinger, gjøre kjøpet
-              enklere og undersøke behovene til flere enn fiskeren. Løsningen
-              var fortsatt en lokal prototype: ekte innlogging, betaling, felles
-              lagring og innsending av rapporter gjenstod.
+              enklere og undersøke behovene til flere enn fiskeren.
             </p>
             <a className="primary-button" href="https://easyfisk.pages.dev/">
               Prøv dagens prototype ↗
@@ -173,21 +171,6 @@ export default function StatusOne() {
               dokumenterer den tidligere perioden.
             </p>
           </section>
-          <aside className="source-note">
-            <strong>Om dokumentasjonen</strong>
-            <p>
-              Status 1 er bearbeidet i ettertid fra den opprinnelige
-              praksissiden og{' '}
-              <a href="https://github.com/MarieHesseberg/EasyFisk/blob/main/PROSJEKTLOGG.md">
-                prosjektloggen
-              </a>
-              . Augustbildene er fra{' '}
-              <a href="https://github.com/MarieHesseberg/EasyFisk/blob/main/visual-baseline/README.md">
-                referansen 27. august
-              </a>
-              ; bildet fra 18. september er fra prosjektets designgjennomgang.
-            </p>
-          </aside>
           <div className="report-next">
             <Link href="/">← Til forsiden</Link>
             <Link className="primary-button" href="/status-2/">

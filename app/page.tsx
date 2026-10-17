@@ -263,17 +263,14 @@ export default function Home() {
             </div>
             <div>
               <p>
-                Prototypen brukes til å utforske brukerflyter, innhold og
-                samspillet mellom rollene før en løsning settes i drift.
-                Testbetaling og lokale registreringer viser hvordan oppgavene
-                kan løses, men utfører ikke virkelige betalinger eller
-                innsendinger.
+                Praksisoppgaven min er å utvikle en prototype. Jeg utforsker
+                hvordan innhold, funksjoner og ulike roller kan henge sammen, og
+                gjør ideene konkrete nok til at andre kan prøve dem.
               </p>
               <p>
-                En driftsversjon trenger ekte innlogging, felles database,
-                integrasjoner og avklarte rutiner for hvem som mottar og
-                behandler opplysningene. Videre testing med fiskere og andre
-                brukere skal hjelpe med å prioritere dette.
+                Gjennom testing og tilbakemeldinger fra fiskere og oppdragsgiver
+                kan jeg finne ut hva som er forståelig, hva som er vanskelig, og
+                hvordan prototypen kan forbedres.
               </p>
               <a className="primary-button" href="https://easyfisk.pages.dev/">
                 Utforsk EasyFisk ↗

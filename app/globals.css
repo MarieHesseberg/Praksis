@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+/* Respect the reader's browser text-size preference. */
+html {
+  font-size: 112.5%;
+}
+
 :root {
   --paper: #f5f3ed;
   --ink: #132738;
@@ -870,20 +875,6 @@ h2 {
   }
 }
 
-/* To skriftstørrelser: overskrift og brødtekst */
-body,
-body * {
-  font-size: 1rem !important;
-}
-h1,
-h2 {
-  font-size: 2.5rem !important;
-  line-height: 1.18;
-}
-h3 {
-  line-height: 1.4;
-}
-
 /* Shared navigation and separate reports. Keep all links available on mobile. */
 .site-header {
   height: auto;
@@ -1099,7 +1090,7 @@ a:focus-visible {
     gap: 6px 10px;
   }
   .site-header nav a {
-    font-size: 0.9rem !important;
+    font-size: 1rem;
   }
   .report-gallery,
   .feature-grid {
@@ -1127,9 +1118,170 @@ a:focus-visible {
     top: 12%;
   }
   .status-note {
-    font-size: 0.8rem !important;
+    font-size: 1rem;
   }
   .report-next .primary-button {
     padding-inline: 16px;
   }
+}
+
+/* Readable text, clear navigation and layouts that reflow with larger type. */
+body {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+p,
+li,
+figcaption {
+  overflow-wrap: anywhere;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: anywhere;
+}
+h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.2;
+}
+h2 {
+  line-height: 1.25;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+}
+.report-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.lead,
+.large-copy {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.eyebrow,
+.section-label,
+.brand strong,
+nav,
+.header-link,
+.timeline-content time,
+.tags span,
+.status-note,
+footer,
+.report-figure figcaption,
+.small-note,
+.report-meta,
+.showcase figcaption,
+.portrait figcaption {
+  font-size: 1rem;
+}
+.eyebrow,
+.section-label {
+  letter-spacing: 0.06em;
+}
+.report-section > p,
+.report-list,
+.company-grid > div > p {
+  max-width: 65ch;
+}
+.challenge-grid p,
+.responsibility-grid p,
+.feature-grid p,
+.report-meta,
+.report-figure figcaption span,
+.small-note {
+  color: #344d5e;
+}
+.site-header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 8px 10px;
+}
+.primary-button,
+.light-button,
+.text-link,
+.footer-links a,
+.report-next > a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+.report-next > a:not(.primary-button),
+.footer-links a,
+.text-link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+a:focus-visible {
+  outline: 3px solid #132738;
+  outline-offset: 5px;
+  box-shadow: 0 0 0 5px #fff;
+}
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -200px;
+  padding: 12px 20px;
+  background: #fff;
+  color: #132738;
+  z-index: 100;
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.section-heading:has(> h2:only-child) {
+  grid-template-columns: 1fr;
+}
+.hero-visual .status-note {
+  max-width: 90%;
+}
+.phone img {
+  height: auto;
+}
+@media (max-width: 1100px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .feature-grid,
+  .report-gallery,
+  .company-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .site-header nav {
+    justify-content: flex-start;
+    gap: 6px 10px;
+  }
+  .site-header nav a {
+    font-size: 1rem;
+  }
+  .hero-copy {
+    min-height: auto;
+    padding-block: 64px;
+  }
+  .report-gallery.three .report-figure {
+    display: block;
+  }
+  .timeline-entry {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .timeline-marker {
+    padding: 20px 24px 0;
+    border-right: 0;
+  }
+  .timeline-content {
+    padding: 20px 24px 28px;
+  }
+  .section-label {
+    flex-wrap: wrap;
+  }
+}
+.report-section h2 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
 }
