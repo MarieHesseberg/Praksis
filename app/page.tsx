@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const logEntries = [
   {
     date: '19.–30. august',
@@ -37,75 +38,292 @@ const logEntries = [
   },
 ];
 
-const responsibilities = [
-  { number: '01', title: 'Forstå', text: 'Avgrense behov, regler og brukerens viktigste oppgaver.' },
-  { number: '02', title: 'Designe og utvikle', text: 'Lage brukerflyter, grensesnitt og funksjoner for mobil og PC.' },
-  { number: '03', title: 'Teste og forbedre', text: 'Bruke tilbakemeldinger og tester til å prioritere neste versjon.' },
-];
+import { SiteHeader, SiteFooter, asset } from '../components/site-shell';
 
-const challenges = [
-  { title: 'Holde orden på regler og informasjon', text: 'EasyFisk inneholder mange regler, valg og opplysninger som må stemme overens. En stor utfordring har vært å beholde oversikten og passe på at informasjonen er riktig og presenteres på riktig sted.' },
-  { title: 'Prioritere når alt virker viktig', text: 'Listen over ting som kan bygges og forbedres blir fort lang. Jeg har måttet lære å dele opp arbeidet, velge hva som er viktigst nå og akseptere at ikke alt kan løses samtidig.' },
-  { title: 'Se løsningen med nye øyne', text: 'En prototype med mange funksjoner er krevende å teste grundig. Når jeg jobber alene, kan jeg bli blind for egne feil eller sitte fast i én måte å løse noe på. Derfor vil jeg gjennomføre flere brukertester og hente inn flere perspektiver.' },
+const recentEntries = [
+  {
+    date: '25.–29. september',
+    title: 'Enklere fiskekortkjøp',
+    text: 'Jeg samlet kjøpet rundt sone, delsone og kalender. Dagskort og sesongkort fikk tydelige valg, og bestillingen viser alle valgte dager og totalpris.',
+    tags: ['Kjøpsflyt', 'Vilkår'],
+  },
+  {
+    date: '1.–4. oktober',
+    title: 'Profil og bedre områdeinformasjon',
+    text: 'Jeg laget profilregistrering, ryddet Mer-menyen og arbeidet med områdebilder og opplysninger om fasiliteter, kontrollert mot Inatur.',
+    tags: ['Profil', 'Innhold', 'Kildekontroll'],
+  },
+  {
+    date: '8.–14. oktober',
+    title: 'Roller og oppgaver rundt elva',
+    text: 'Jeg undersøkte og utviklet lokale testflyter for grunneier, gjester, oppsyn, desinfektør og administrator. Rollevalget ble forenklet slik at relevante oppgaver vises i selve appen.',
+    tags: ['Roller', 'Tilgang', 'Brukerflyt'],
+  },
+  {
+    date: '14.–15. oktober',
+    title: 'Tydeligere dokumenter og fiskestart',
+    text: 'Jeg forbedret validering, kortvilkår, lesbarhet og nullfangst. Start fiske er tilgjengelig når ingen tur pågår, og manglende krav forklares med konkrete handlinger. Mobilvisningen fikk bedre plass og tydeligere knapper.',
+    tags: ['Mobil', 'Testing', 'Tilbakemeldinger'],
+  },
+];
+const features = [
+  [
+    'Fiskekort og kjøp',
+    'Finne riktig sone og delsone, velge dager eller sesongkort, lese lokale vilkår og samle egne fiskekort. Kjøp til andre skal skille mellom kjøper og fisker.',
+  ],
+  [
+    'Dokumentasjon på ett sted',
+    'Samle fiskekort, fiskeravgift eller fritak og desinfiseringsbevis. Vise gyldighet og hva som mangler før fisket starter.',
+  ],
+  [
+    'Kart og regler',
+    'Utforske fiskeområder og sonegrenser, finne praktisk informasjon og se regler som gjelder den aktuelle fisketuren. Regelendringer skal være tydelige.',
+  ],
+  [
+    'En sammenhengende fisketur',
+    'Velge sone, kontrollere forberedelsene, starte og avslutte turen. Registrere tidligere turer når det er nødvendig.',
+  ],
+  [
+    'Fangst og rapportering',
+    'Registrere fangst, gjenutsetting eller nullfangst, legge til bilde og kommentar og finne historikken igjen. Målet er samlet rapportering som kan følges opp.',
+  ],
+  [
+    'Profil, språk og oversikt',
+    'Gjenbruke profilopplysninger, støtte norsk og engelsk og gi oversikt over egne turer, dokumenter, varsler og statistikk.',
+  ],
+  [
+    'Grunneier, salg og gjester',
+    'La ansvarlige administrere egne tilbud, priser og salgsgrenser, og gi gjestetilgang innenfor avtalte rettigheter.',
+  ],
+  [
+    'Oppsyn og desinfisering',
+    'Gjøre dokumentkontroll enklere og gi desinfektører en tydelig flyt for behandling og bevis. Arbeidet skal avgrenses til riktig område eller stasjon.',
+  ],
+  [
+    'Administrasjon og oppfølging',
+    'Godkjenne arbeidsroller, styre tidsavgrensede tilganger og gjøre det lettere å følge opp rapporter og informasjon på tvers av oppgaver.',
+  ],
 ];
 
 export default function Home() {
   return (
-    <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Til toppen"><span>MH</span><strong>Praksislogg</strong></a>
-        <nav aria-label="Hovednavigasjon"><a href="#om">Om og oppgave</a><a href="#status">Status</a><a href="#logg">Logg</a><a href="#video">Prøv</a></nav>
-        <a className="header-link" href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">GitHub · EasyFisk ↗</a>
-      </header>
-
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow">Praksisperiode · høsten 2026</p>
-          <h1>Sammen om en enklere fisketur.</h1>
-          <p className="lead">Dette er status fra praksisarbeidet mitt med <strong>EasyFisk</strong> — en mobilprototype som skal gjøre det enklere å finne informasjon, forstå regler og gjennomføre en fisketur i Mandalselva.</p>
-          <div className="hero-actions"><a className="primary-button" href="#logg">Se hva jeg har gjort ↓</a><a className="text-link" href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Test prototypen ↗</a></div>
-        </div>
-        <div className="hero-visual" aria-label="Skjermbilder fra EasyFisk">
-          <div className="phone phone-back"><img src="screenshots/map.png" alt="Sonekartet i EasyFisk" /></div>
-          <div className="phone phone-front"><img src="screenshots/home.png" alt="Hjemskjermen i EasyFisk" /></div>
-          <div className="status-note"><span className="pulse" /> Oppdatert 22. september</div>
-        </div>
-      </section>
-
-      <section className="about section" id="om">
-        <div className="section-label"><span>01</span> Om meg og oppgaven</div>
-        <div className="about-grid">
-          <figure className="portrait"><img src="me.jpg" alt="Marie Hesseberg" /><figcaption>Marie Hesseberg · designer og utvikler EasyFisk</figcaption></figure>
-          <div className="about-copy"><p className="eyebrow">Hei, jeg er Marie</p><h2>Jeg utvikler EasyFisk fra idé til testbar løsning.</h2><p className="large-copy">Oppgaven er å gjøre informasjon, regler og praktiske oppgaver rundt fiske i Mandalselva enklere å forstå og bruke.</p><p>Jeg designer og utvikler prototypen alene, med faglige innspill og tilbakemeldinger fra Mandalselva Elveeigarlag. Arbeidet omfatter hele prosessen fra innsikt og skisser til kode, testing og dokumentasjon.</p><div className="about-facts"><span>Produktdesign</span><span>Frontend</span><span>Brukeropplevelse</span><span>Testing</span></div></div>
-        </div>
-        <div className="fact-strip"><div><strong>1</strong><span>selvstendig utvikler</span></div><div><strong>198</strong><span>enhetstester</span></div><div><strong>106</strong><span>nettlesertester</span></div><div><strong>2</strong><span>språk i prototypen</span></div></div>
-        <div className="responsibility-grid">{responsibilities.map((item) => <article key={item.number}><span>{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
-      </section>
-
-      <section className="showcase section" id="status">
-        <div className="showcase-copy"><p className="eyebrow light">02 · Status</p><h2>En sammenhengende fiskereise.</h2><p>Prototypen samler fiskekort, dokumenter, regler, kart, fiskeøkt og fangstrapportering. Brukeren får tydelig beskjed om hva som mangler og hvorfor.</p><a href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Prøv prototypen ↗</a></div>
-        <div className="showcase-images"><figure><img src="screenshots/catch-report.png" alt="Regelkontroll av fangstrapport" /><figcaption>Automatisk regelkontroll</figcaption></figure><figure><img src="screenshots/permits.png" alt="Oversikt over fiskekort" /><figcaption>Fiskekort og dokumentasjon</figcaption></figure></div>
-      </section>
-
-      <section className="section log-section" id="logg">
-        <div className="section-label"><span>03</span> Arbeidslogg</div>
-        <div className="section-heading"><h2>Arbeidet uke for uke.</h2><p>Loggen viser hvordan løsningen har utviklet seg gjennom konkrete valg, testing og forbedringer.</p></div>
-        <div className="timeline">{logEntries.map((entry, index) => <article className="timeline-entry" key={entry.title}><div className="timeline-marker"><span>{String(index + 1).padStart(2, '0')}</span></div><div className="timeline-content"><time>{entry.date}</time><h3>{entry.title}</h3><p>{entry.text}</p><div className="tags">{entry.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div></article>)}</div>
-      </section>
-
-      <section className="challenges section">
-        <div className="section-label"><span>04</span> Utfordringer og læring</div>
-        <div className="section-heading"><h2>Tre ting jeg har lært.</h2><p>De største utfordringene har vært å bevare oversikten, prioritere arbeidet og oppdage svakheter i min egen løsning.</p></div>
-        <div className="challenge-grid">{challenges.map((item, index) => <article key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
-      </section>
-
-      <section className="video-section section" id="video">
-        <div className="video-copy"><p className="eyebrow light">05 · Prøv selv</p><h2>Se EasyFisk i bruk.</h2><p>Prototypen er klar for testing av hele reisen. Neste steg er flere brukertester og å erstatte demonstrasjonsdata med ekte tjenester.</p><div className="hero-actions"><a className="light-button" href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Start demonstrasjonen ↗</a><a className="video-link" href="https://github.com/MarieHesseberg/EasyFisk/blob/main/PROSJEKTLOGG.md" target="_blank" rel="noreferrer">Detaljert prosjektlogg ↗</a></div></div>
-        <div className="video-frame"><span>01</span><div><b>Før turen</b><p>Fiskekort, dokumenter, regler og status.</p></div><span>02</span><div><b>Under turen</b><p>Sonevalg, kart og aktiv fiskeøkt.</p></div><span>03</span><div><b>Etter turen</b><p>Fangst, historikk og statistikk.</p></div></div>
-      </section>
-
-      <footer><div><span className="footer-mark">MH</span><p>Praksislogg · EasyFisk<br />Utviklet og dokumentert av Marie Hesseberg</p></div><div className="footer-links"><a href="https://github.com/MarieHesseberg/EasyFisk" target="_blank" rel="noreferrer">GitHub-repository ↗</a><a href="https://easyfisk.pages.dev/" target="_blank" rel="noreferrer">Publisert prototype ↗</a></div></footer>
-    </main>
+    <>
+      <SiteHeader />
+      <main id="main-content">
+        <section className="hero" id="top">
+          <div className="hero-copy">
+            <p className="eyebrow">
+              EasyFisk · Mandalselva · praksis høsten 2026
+            </p>
+            <h1>Alt rundt fisket. Samlet på ett sted.</h1>
+            <p className="lead">
+              EasyFisk er en mobilprototype som skal gjøre det enklere å
+              planlegge, gjennomføre og rapportere en fisketur i Mandalselva —
+              og gi dem som forvalter fisket en mer sammenhengende arbeidsflyt.
+            </p>
+            <div className="hero-actions">
+              <a className="primary-button" href="https://easyfisk.pages.dev/">
+                Prøv prototypen ↗
+              </a>
+              <a className="text-link" href="#behov">
+                Hvorfor EasyFisk? ↓
+              </a>
+            </div>
+          </div>
+          <div className="hero-visual" aria-label="Skjermbilder av EasyFisk">
+            <div className="phone phone-back">
+              <Image
+                unoptimized
+                width={390}
+                height={844}
+                src={asset('screenshots/map.png')}
+                alt="Sonekart i EasyFisk"
+              />
+            </div>
+            <div className="phone phone-front">
+              <Image
+                unoptimized
+                width={390}
+                height={844}
+                src={asset('screenshots/october-home.png')}
+                alt="Hjemskjermen i EasyFisk, oktober 2026"
+              />
+            </div>
+            <div className="status-note">Testbar prototype · oktober 2026</div>
+          </div>
+        </section>
+        <section className="section company" id="behov">
+          <div className="section-label">
+            <span>01</span> Behovet i Mandalselva
+          </div>
+          <div className="company-grid">
+            <div>
+              <h2>En fisketur skal ikke begynne med å lete overalt.</h2>
+            </div>
+            <div>
+              <p className="large-copy">
+                I dag må fiskeren forholde seg til informasjon og dokumentasjon
+                på forskjellige steder. Rapportering og oppfølging skjer også
+                via e-post. Det gjør det tungvint å få oversikt og holde
+                opplysningene samlet.
+              </p>
+              <p>
+                Fiskekort, lokale regler, fiskeravgift, desinfisering og
+                informasjon om fiskeområdene inngår i samme tur, men oppleves
+                som separate oppgaver. Fiskeren må selv finne frem, kontrollere
+                hva som gjelder og passe på at nødvendig dokumentasjon er
+                tilgjengelig.
+              </p>
+              <p>
+                For dem som følger opp fisket, betyr spredte opplysninger og
+                rapporter på e-post at informasjon må finnes frem, sammenstilles
+                og knyttes til riktig person, tur eller område. Det gir mer
+                manuelt arbeid og gjør det vanskeligere å få en samlet oversikt.
+              </p>
+              <p>
+                EasyFisk skal samle denne brukerreisen og redusere behovet for å
+                bytte mellom steder og gjenta opplysninger. Målet er både
+                enklere forberedelser for fiskeren og mer strukturert oppfølging
+                for Mandalselva Elveeigarlag.
+              </p>
+            </div>
+          </div>
+          <blockquote className="problem-statement">
+            <span>Problemstilling</span>Hvordan kan én samlet digital løsning
+            gjøre informasjon, dokumentasjon og rapportering enklere for fiskere
+            og forvaltningen i Mandalselva?
+          </blockquote>
+        </section>
+        <section className="section" id="losningen">
+          <div className="section-label">
+            <span>02</span> Den ønskede brukerreisen
+          </div>
+          <div className="section-heading">
+            <h2>Før, under og etter turen.</h2>
+            <p>
+              Informasjonen skal følge fisketuren, slik at brukeren får hjelp
+              til neste oppgave på riktig tidspunkt.
+            </p>
+          </div>
+          <div className="challenge-grid">
+            <article>
+              <span>01</span>
+              <h3>Før turen</h3>
+              <p>
+                Finn fiskeområde, velg kort, les regler og samle dokumentasjon.
+                Se hva som er klart, og få hjelp med det som mangler.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Ved elva</h3>
+              <p>
+                Bruk kartet, start fiske i riktig sone og ha kort og bevis lett
+                tilgjengelig for kontroll. Registrer fangsten underveis.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Etter turen</h3>
+              <p>
+                Avslutt med fangst eller nullfangst og finn turen igjen i
+                historikken. Målet er å gjøre rapporteringen tilgjengelig for
+                videre oppfølging.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section className="section about" id="funksjoner">
+          <div className="section-label">
+            <span>03</span> Funksjoner og ambisjon
+          </div>
+          <div className="section-heading">
+            <h2>Én app. Flere behov.</h2>
+            <p>
+              Dette er funksjonene løsningen skal dekke. Mange kan prøves lokalt
+              allerede; ekte betaling, delt lagring og rapportlevering gjenstår.
+            </p>
+          </div>
+          <div className="feature-grid">
+            {features.map(([title, text]) => (
+              <article key={title}>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+        <section className="section prototype-note">
+          <div className="section-label">
+            <span>04</span> Om prosjektet
+          </div>
+          <div className="company-grid">
+            <div>
+              <h2>Bygget for å prøve, lære og forbedre.</h2>
+              <p>
+                Jeg heter Marie Hesseberg og designer og utvikler EasyFisk med
+                faglige innspill og tilbakemeldinger fra Mandalselva
+                Elveeigarlag.
+              </p>
+            </div>
+            <div>
+              <p>
+                Prototypen brukes til å utforske brukerflyter, innhold og
+                samspillet mellom rollene før en løsning settes i drift.
+                Testbetaling og lokale registreringer viser hvordan oppgavene
+                kan løses, men utfører ikke virkelige betalinger eller
+                innsendinger.
+              </p>
+              <p>
+                En driftsversjon trenger ekte innlogging, felles database,
+                integrasjoner og avklarte rutiner for hvem som mottar og
+                behandler opplysningene. Videre testing med fiskere og andre
+                brukere skal hjelpe med å prioritere dette.
+              </p>
+              <a className="primary-button" href="https://easyfisk.pages.dev/">
+                Utforsk EasyFisk ↗
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="section log-section" id="logg">
+          <div className="section-label">
+            <span>05</span> Prosjektlogg
+          </div>
+          <div className="section-heading">
+            <h2>Arbeidet uke for uke.</h2>
+            <p>
+              Fra de første skjermene til en prototype med flere roller. Status
+              1 og Status 2 ligger på egne sider i menyen øverst.
+            </p>
+          </div>
+          <div className="timeline">
+            {[...logEntries, ...recentEntries].map((entry, index) => (
+              <article className="timeline-entry" key={entry.title}>
+                <div className="timeline-marker">
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                </div>
+                <div className="timeline-content">
+                  <time>{entry.date} 2026</time>
+                  <h3>{entry.title}</h3>
+                  <p>{entry.text}</p>
+                  <div className="tags">
+                    {entry.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="log-source">
+            <a href="https://github.com/MarieHesseberg/EasyFisk/blob/main/PROSJEKTLOGG.md">
+              Les den detaljerte prosjektloggen ↗
+            </a>
+          </p>
+        </section>
+      </main>
+      <SiteFooter />
+    </>
   );
 }
-
