@@ -17,7 +17,7 @@ export default function StatusTwo() {
       <main id="main-content">
         <section className="report-hero">
           <p className="eyebrow">Status 2 · 23. september–17. oktober 2026</p>
-          <h1>Fra fiskerens verktøy til flere roller rundt elva.</h1>
+          <h1>Fra fisketur til forvaltning.</h1>
           <p className="lead">
             Siden Status 1 har jeg videreutviklet EasyFisk med enklere
             fiskekortkjøp, tydeligere dokumentasjon og arbeidsflyter for
