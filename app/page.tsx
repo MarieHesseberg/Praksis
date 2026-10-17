@@ -162,29 +162,32 @@ export default function Home() {
             </div>
             <div>
               <p className="large-copy">
-                I dag må fiskeren forholde seg til informasjon og dokumentasjon
-                på forskjellige steder. Rapportering og oppfølging skjer også
-                via e-post. Det gjør det tungvint å få oversikt og holde
-                opplysningene samlet.
+                I dag er det fiskeren trenger til en tur i Mandalselva, spredt
+                på flere steder. Fiskeren må selv vite hva som må ordnes, finne
+                frem til de ulike tjenestene og holde styr på bevisene.
               </p>
               <p>
-                Fiskekort, lokale regler, fiskeravgift, desinfisering og
-                informasjon om fiskeområdene inngår i samme tur, men oppleves
-                som separate oppgaver. Fiskeren må selv finne frem, kontrollere
-                hva som gjelder og passe på at nødvendig dokumentasjon er
-                tilgjengelig.
+                Fiskekort kjøpes på Inatur. Deretter må fiskeren selv finne et
+                desinfiseringssted og få utstyret desinfisert. Beviset kan være
+                på papir eller digitalt. Den statlige fiskeravgiften må fiskeren
+                også kjenne til og finne frem til på egen hånd, og reglene for
+                elva må letes opp separat.
               </p>
               <p>
-                For dem som følger opp fisket, betyr spredte opplysninger og
-                rapporter på e-post at informasjon må finnes frem, sammenstilles
-                og knyttes til riktig person, tur eller område. Det gir mer
-                manuelt arbeid og gjør det vanskeligere å få en samlet oversikt.
+                Når oppsynet kommer, må fiskeren være klar til å vise frem
+                fiskekort, desinfiseringsbevis og dokumentasjon på fiskeravgift.
+                Disse kan ligge på forskjellige steder, selv om de gjelder den
+                samme fisketuren. Etter turen må fiskeren i tillegg finne frem
+                e-posten med rapporteringslenken og klikke på den for å
+                rapportere turen.
               </p>
               <p>
-                EasyFisk skal samle denne brukerreisen og redusere behovet for å
-                bytte mellom steder og gjenta opplysninger. Målet er både
-                enklere forberedelser for fiskeren og mer strukturert oppfølging
-                for Mandalselva Elveeigarlag.
+                EasyFisk skal samle dette i én app: kjøp av fiskekort,
+                informasjon om desinfisering og fiskeravgift, reglene for elva,
+                bevis som kan vises til oppsynet og rapportering etter turen.
+                Målet er at fiskeren skal få oversikt over hva som må gjøres, ha
+                dokumentasjonen tilgjengelig og kunne rapportere uten å lete
+                etter en lenke i innboksen.
               </p>
             </div>
           </div>
@@ -200,10 +203,6 @@ export default function Home() {
           </div>
           <div className="section-heading">
             <h2>Før, under og etter turen.</h2>
-            <p>
-              Informasjonen skal følge fisketuren, slik at brukeren får hjelp
-              til neste oppgave på riktig tidspunkt.
-            </p>
           </div>
           <div className="challenge-grid">
             <article>
@@ -239,10 +238,6 @@ export default function Home() {
           </div>
           <div className="section-heading">
             <h2>Én app. Flere behov.</h2>
-            <p>
-              Dette er funksjonene løsningen skal dekke. Mange kan prøves lokalt
-              allerede; ekte betaling, delt lagring og rapportlevering gjenstår.
-            </p>
           </div>
           <div className="feature-grid">
             {features.map(([title, text]) => (
@@ -292,10 +287,6 @@ export default function Home() {
           </div>
           <div className="section-heading">
             <h2>Arbeidet uke for uke.</h2>
-            <p>
-              Fra de første skjermene til en prototype med flere roller. Status
-              1 og Status 2 ligger på egne sider i menyen øverst.
-            </p>
           </div>
           <div className="timeline">
             {[...logEntries, ...recentEntries].map((entry, index) => (
