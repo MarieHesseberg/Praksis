@@ -111,16 +111,17 @@ export default function StatusTwo() {
             <p className="eyebrow">03 · Skjermbilder og endringer</p>
             <h2>Hva er annerledes siden Status 1?</h2>
             <p>
-              Septemberbildene viser utgangspunktet. De nye opptakene viser den
-              publiserte prototypen i oktober, med oppdiktede testopplysninger.
+              Bildet fra 18. september viser utgangspunktet. De nye opptakene
+              viser den publiserte prototypen i oktober, med oppdiktede
+              testopplysninger.
             </p>
             <div className="report-gallery">
               <Screenshot
-                file="permits.png"
-                title="Status 1 · den tidligere kortvisningen"
+                file="september-shop.png"
+                title="Status 1 · kortbutikken 18. september"
               >
-                Fiskekort var samlet i en enklere oversikt. Videre arbeid tok
-                utgangspunkt i å gjøre valg og kjøp lettere.
+                Sone, dato og kortprodukter var samlet i en enkel liste. Videre
+                arbeid tok utgangspunkt i å gjøre valg og kjøp lettere.
               </Screenshot>
               <Screenshot
                 file="october-permits.png"

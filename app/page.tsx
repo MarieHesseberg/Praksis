@@ -136,8 +136,8 @@ export default function Home() {
                 unoptimized
                 width={390}
                 height={844}
-                src={asset('screenshots/map.png')}
-                alt="Sonekart i EasyFisk"
+                src={asset('screenshots/october-permits.png')}
+                alt="Fiskekortkjøp i EasyFisk, oktober 2026"
               />
             </div>
             <div className="phone phone-front">

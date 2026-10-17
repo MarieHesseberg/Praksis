@@ -95,11 +95,12 @@ export default function StatusOne() {
                 men hjem trengte tydeligere prioritering.
               </Screenshot>
               <Screenshot
-                file="home.png"
-                title="September · den nye designretningen"
+                file="september-design-home.png"
+                title="19. september · valgt designretning"
               >
-                Skjermbildet fra den opprinnelige praksissiden viser
-                illustrasjon, roligere rader og tydeligere hovedhandling.
+                Arkivert designforslag fra skjermgalleriet: illustrasjon,
+                roligere rader og tydelig hovedhandling. Dette er et
+                designforslag, ikke et opptak av den kjørende appen.
               </Screenshot>
             </div>
             <div className="report-gallery">
@@ -111,11 +112,11 @@ export default function StatusOne() {
                 referansebilder.
               </Screenshot>
               <Screenshot
-                file="map.png"
-                title="September · interaktivt sonekart"
+                file="september-shop.png"
+                title="18. september · fiskekortbutikken"
               >
-                Kartet fikk geografisk bakgrunn og sonevalg. Utforsking og
-                kontroll av fiskerett ble skilt fra hverandre.
+                Arkivbilde fra designgjennomgangen viser sonevalg, dato og
+                separate kortprodukter før den senere kalenderflyten.
               </Screenshot>
             </div>
           </section>
