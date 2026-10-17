@@ -166,21 +166,29 @@ export default function Home() {
                 på flere steder. Fiskeren må selv vite hva som må ordnes, finne
                 frem til de ulike tjenestene og holde styr på bevisene.
               </p>
+              <h3>Før fisketuren</h3>
               <p>
                 Fiskekort kjøpes på Inatur. Deretter må fiskeren selv finne et
                 desinfiseringssted og få utstyret desinfisert. Beviset kan være
-                på papir eller digitalt. Den statlige fiskeravgiften må fiskeren
-                også kjenne til og finne frem til på egen hånd, og reglene for
-                elva må letes opp separat.
+                på papir eller digitalt.
               </p>
+              <p>
+                Den statlige fiskeravgiften må fiskeren også kjenne til og finne
+                frem til på egen hånd, og reglene for elva må letes opp separat.
+              </p>
+              <h3>Ved kontroll</h3>
               <p>
                 Når oppsynet kommer, må fiskeren være klar til å vise frem
                 fiskekort, desinfiseringsbevis og dokumentasjon på fiskeravgift.
                 Disse kan ligge på forskjellige steder, selv om de gjelder den
-                samme fisketuren. Etter turen må fiskeren i tillegg finne frem
-                e-posten med rapporteringslenken og klikke på den for å
-                rapportere turen.
+                samme fisketuren.
               </p>
+              <h3>Etter fisketuren</h3>
+              <p>
+                Etter turen må fiskeren i tillegg finne frem e-posten med
+                rapporteringslenken og klikke på den for å rapportere turen.
+              </p>
+              <h3>Samlet i EasyFisk</h3>
               <p>
                 EasyFisk skal samle dette i én app: kjøp av fiskekort,
                 informasjon om desinfisering og fiskeravgift, reglene for elva,

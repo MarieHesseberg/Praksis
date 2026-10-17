@@ -1285,3 +1285,71 @@ a:focus-visible {
 .report-section h2 {
   font-size: clamp(1.7rem, 3vw, 2.5rem);
 }
+
+/* Explicit paragraph rhythm and a consistent heading hierarchy on all pages. */
+.company-grid p,
+.prototype-note p,
+.report-section p,
+.report-hero p,
+.hero-copy p {
+  margin: 0 0 1.35rem;
+}
+.company-grid > div > p,
+.prototype-note p,
+.report-section > p,
+.report-list {
+  max-width: 60ch;
+}
+.company h2,
+.prototype-note h2,
+.section-heading h2,
+.about h2,
+.report-section h2 {
+  font-size: clamp(1.75rem, 2.8vw, 2.5rem);
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.4rem;
+}
+.company-grid h3,
+.report-section h3,
+.feature-grid h3,
+.challenge-grid h3 {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: normal;
+  margin: 2rem 0 0.65rem;
+}
+.company-grid h3:first-child,
+.feature-grid h3 {
+  margin-top: 0;
+}
+.company-grid .large-copy {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.report-section .eyebrow,
+.report-hero .eyebrow {
+  margin-bottom: 1.2rem;
+}
+.report-section .primary-button,
+.prototype-note .primary-button {
+  margin-top: 0.4rem;
+}
+.report-section .small-note {
+  margin-top: 1.25rem;
+}
+.section-heading:has(> h2:only-child) {
+  margin-bottom: 2.5rem;
+}
+.section-heading h2 {
+  margin-bottom: 0;
+}
+.report-section > p:last-child,
+.company-grid > div > p:last-child {
+  margin-bottom: 0;
+}
