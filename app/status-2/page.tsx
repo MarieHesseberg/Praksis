@@ -199,8 +199,8 @@ export default function StatusTwo() {
           </section>
           <div className="report-next">
             <Link href="/status-1/">← Status 1</Link>
-            <Link className="primary-button" href="/">
-              Til forsiden →
+            <Link className="primary-button" href="/refleksjonsnotat/">
+              Til refleksjonsnotatet →
             </Link>
           </div>
         </div>

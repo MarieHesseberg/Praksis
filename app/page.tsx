@@ -65,6 +65,30 @@ const recentEntries = [
     text: 'Jeg forbedret validering, kortvilkår, lesbarhet og nullfangst. Start fiske er tilgjengelig når ingen tur pågår, og manglende krav forklares med konkrete handlinger. Mobilvisningen fikk bedre plass og tydeligere knapper.',
     tags: ['Mobil', 'Testing', 'Tilbakemeldinger'],
   },
+  {
+    date: '16.–19. oktober',
+    title: 'Fra fiskekort til riktig område på kartet',
+    text: 'Jeg koblet fiskekortene til delsonene på kartet og la inn en vei videre til fangststatistikk for området. Jeg gikk også gjennom hva som skjer når en fisker skal vise dokumenter til oppsyn eller registrere desinfisering.',
+    tags: ['Kart', 'Fangststatistikk', 'Oppsyn'],
+  },
+  {
+    date: '23. oktober',
+    title: 'De siste turene rett på forsiden',
+    text: 'Etter brukertestene la jeg de tre siste fisketurene på forsiden, så fiskeren kan åpne en tur direkte. Grunneieren fikk en kalender for å sperre datoer og mulighet til å velge hvor mange kort som kan selges per døgn.',
+    tags: ['Brukertesting', 'Turhistorikk', 'Fiskekort'],
+  },
+  {
+    date: '30.–31. oktober',
+    title: 'Oppfølging av tilbakemeldingene fra Tingtun',
+    text: 'Jeg gjorde det tydeligere på forsiden hvor lenge fiskekortet gjelder, og om fiskeravgift og desinfisering er registrert. Under sluttkontrollen oppdaget jeg at sonevalgene tok for mye plass på små mobilskjermer. Jeg samlet dem på én rad og testet kartet på nytt.',
+    tags: ['Dokumenter', 'Mobil', 'Testing'],
+  },
+  {
+    date: 'November',
+    title: 'Praksisvideo og avsluttende refleksjon',
+    text: 'Jeg forberedte spørsmål til et kort intervju om hvorfor elveeigarlaget ønsker appen, og planla hvordan opptakene kunne brukes i praksisvideoen. I refleksjonsnotatet skrev jeg om brukertestene, erfaringene med KI og hvordan jeg ville fordelt arbeidet gjennom semesteret.',
+    tags: ['Praksisvideo', 'Refleksjon'],
+  },
 ];
 const features = [
   [

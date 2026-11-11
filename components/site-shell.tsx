@@ -30,6 +30,9 @@ export function SiteHeader({ active = 'home' }: { active?: string }) {
         >
           Status 2
         </Link>
+        <Link href="/refleksjonsnotat/" aria-current={active === 'refleksjonsnotat' ? 'page' : undefined}>
+          Refleksjonsnotat
+        </Link>
         <Link href="/#logg">Prosjektlogg</Link>
       </nav>
     </header>
