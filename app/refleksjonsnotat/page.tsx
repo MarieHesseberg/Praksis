@@ -35,7 +35,7 @@ export default function Refleksjonsnotat() {
               <Screenshot file="august-home.png" title="27. august 2026">Den tidlige prototypen.</Screenshot>
               <Screenshot file="september-before-home.png" title="18. september 2026">Hjemskjermen før designet ble lagt om.</Screenshot>
               <Screenshot file="october-home.png" title="17. oktober 2026">Fiskestart og forberedelser samlet på forsiden.</Screenshot>
-              <Screenshot file="november-home.png" title="11. november 2026">Egne fiskeøkter har fått plass på hjemskjermen.</Screenshot>
+              <Screenshot file="hjem-2026-11-11-9401513d.png" title="11. november 2026">Egne fiskeøkter har fått plass på hjemskjermen.</Screenshot>
             </div>
           </section>
           <div className="report-next">
