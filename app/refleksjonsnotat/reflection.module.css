@@ -1,21 +1,23 @@
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
   padding: clamp(2rem, 5vw, 5rem) max(1.25rem, calc((100% - 70rem) / 2));
   background: var(--sky);
   border-bottom: 1px solid var(--line);
 }
 .hero h1 {
-  font-size: clamp(2.25rem, 4.8vw, 4.75rem);
+  font-size: clamp(1.85rem, 5vw, 4rem);
   line-height: 1.08;
   margin: 1rem 0 1.5rem;
-  overflow-wrap: anywhere;
+  max-width: none;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 .hero img {
   display: block;
   width: 100%;
+  max-width: 48rem;
   height: auto;
   border-radius: 0.75rem;
 }
